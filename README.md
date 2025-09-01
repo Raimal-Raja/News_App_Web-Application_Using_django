@@ -11,14 +11,8 @@ A modern, responsive news web application built with Django framework that provi
 
 ## 📸 Screenshots
 
-![News App Homepage](https://via.placeholder.com/800x400/092E20/FFFFFF?text=News+App+Homepage)
-*Homepage showcasing latest news articles with category navigation*
+![News App Homepage](https://github.com/Raimal-Raja/News_App_Web-Application_Using_django/blob/main/Screenshot%202025-09-01%20105514.png)
 
-![Article Detail View](https://via.placeholder.com/800x400/1572B6/FFFFFF?text=Article+Detail+View)
-*Detailed article view with clean typography and social sharing options*
-
-![Mobile Responsive](https://via.placeholder.com/400x600/563D7C/FFFFFF?text=Mobile+View)
-*Mobile-responsive design for optimal viewing on all devices*
 
 ## 🚀 Project Overview
 
