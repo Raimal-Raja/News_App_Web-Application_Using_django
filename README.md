@@ -2,11 +2,10 @@
 
 Django news web application with templates, application views, and a dependency manifest.
 
-## Repository guide
+## Setup and repository reference
 
-### Contents
+### Project structure
 
-- [README.md](README.md)
 - [Screenshot 2025-09-01 105514.png](Screenshot%202025-09-01%20105514.png)
 - [Web-Application](Web-Application)
 
@@ -37,9 +36,15 @@ python manage.py runserver
 
 ### Configuration and limitations
 
+Run commands from Web-Application and install its requirements.txt. News retrieval depends on gnewsclient and external services; live news fetching was not exercised.
+
 ### Validation
 
-Reviewed on 2026-10-08. Python syntax checks passed for 11 source files. Syntax validation does not establish runtime correctness or dependency compatibility.
+Audit: 2026-10-08. Repository structure, setup instructions and description were reviewed. 11 existing Python files passed syntax checks; changed files and new regression tests were checked separately. Django system checks passed. Syntax checks do not establish full runtime correctness. External APIs, live scraping, GUI interaction, notebook training and production deployment were not comprehensively exercised.
+
+### Repository description
+
+The short GitHub description is provided in [REPOSITORY_DESCRIPTION.md](REPOSITORY_DESCRIPTION.md).
 
 ### Contributions
 
