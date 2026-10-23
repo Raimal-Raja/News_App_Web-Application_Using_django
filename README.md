@@ -1,51 +1,63 @@
-# News App Web-Application Using django
+# News Web Application — Django
 
 Django news web application with templates, application views, and a dependency manifest.
 
-## Setup and repository reference
+## Project focus
 
-### Project structure
+Django application. The sections below separate the runnable entry point, source layout, prerequisites, and verification path.
 
-- [Screenshot 2025-09-01 105514.png](Screenshot%202025-09-01%20105514.png)
-- [Web-Application](Web-Application)
+## Architecture
 
-### Getting started
+```mermaid
+flowchart TD
+    A["Browser request"] --> B["Django URL routing"]
+    B --> C["Application views and forms"]
+    C --> D["Models and database"]
+    C --> E["HTML templates"]
+    D --> E
+    E --> F["Rendered response"]
+```
+
+## Repository structure
+
+| Path | Purpose |
+| --- | --- |
+| [`Web-Application/`](Web-Application) | Project-specific source, resources, or learning material. |
+
+## Getting started
 
 ```bash
 git clone https://github.com/Raimal-Raja/News_App_Web-Application_Using_django.git
 cd News_App_Web-Application_Using_django
 ```
 
-Create and activate a virtual environment, then install the project dependencies:
-
 ```bash
 python -m venv .venv
-# Linux/macOS: source .venv/bin/activate
-# Windows PowerShell: .venv\Scripts\Activate.ps1
-python -m pip install -r "Web-Application/requirements.txt"
+source .venv/bin/activate
 ```
 
-Run each Django project from the folder containing its manage.py file:
+On Windows PowerShell, activate the environment with `.venv\Scripts\Activate.ps1` instead.
 
 ```bash
-cd "Web-Application"
-python manage.py check
+python -m pip install -r Web-Application/requirements.txt
+```
+
+```bash
+cd Web-Application
 python manage.py migrate
 python manage.py runserver
 ```
 
-### Configuration and limitations
+Use the local development server for inspection. Review the project settings before deployment.
 
-Run commands from Web-Application and install its requirements.txt. News retrieval depends on gnewsclient and external services; live news fetching was not exercised.
+## Verification
 
-### Validation
+Use the setup commands and inspect the selected interface, example, or notebook with known inputs. This documentation review checks repository paths and dependency declarations; it does not claim fresh end-to-end execution or model-quality measurements.
 
-Recorded checks from the previous maintenance review (2026-10-08): 11 existing Python files passed syntax checks; changed files and new regression tests were checked separately. Django system checks passed. Syntax checks do not establish full runtime correctness. External APIs, live scraping, GUI interaction, notebook training and production deployment were not comprehensively exercised.
+## Contributing
 
-### Contributions
+Include reproduction steps, the affected path, expected behavior, and the checks you ran. Keep credentials, generated environments, and unnecessary build artifacts out of commits.
 
-Describe the issue, reproduction steps, environment, and expected behavior when proposing a change. Keep generated environments, credentials, and unnecessary build artifacts out of new commits.
+## License
 
-### License
-
-No top-level license file was found during this review.
+No top-level license file is currently tracked. Check reuse permissions with the repository owner.
